@@ -1,0 +1,173 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.head-main{
+  width:20px;
+  height:20px;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background: #e9ecef;
+  color: #495057;
+  padding-top: 70px; 
+  padding-bottom: 60px; 
+}
+
+/* Header and Footer styles */
+header, footer {
+  background: #383e45;
+  color: #f8f9fa;
+  text-align: center;
+  padding: 1rem 0;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+header {
+  top: 0;
+}
+
+footer {
+  bottom: 0;
+  color:#e9ecef
+}
+
+
+.section-center {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+
+.grocery-form {
+  margin-bottom: 2rem;
+}
+
+.grocery-form h2 {
+  margin-bottom: 1.5rem;
+  color: #495057;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.form-control {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.grocery {
+  flex: 1;
+  margin-right: 1rem;
+  padding: 0.5rem;
+  border: 2px solid #ced4da;
+  border-radius: 0.25rem;
+  font-size: 16px;
+}
+
+.submit-btn {
+  padding: 0.5rem 1.5rem;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #0056b3;
+}
+
+/* Alert styles */
+.alert {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  text-align: center;
+  font-size: 14px;
+}
+
+.alert-danger {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.alert-success {
+  background: #d4edda;
+  color: #155724;
+}
+
+/* List container styles */
+.grocrery-container {
+  margin-bottom: 2rem;
+}
+
+/* Clear button styles */
+.clear-btn {
+  background: #dc3545;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.clear-btn:hover {
+  background: #bd2130;
+}
+
+.background-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: 950px;
+  z-index: -100;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .grocery {
+    width: 60%;
+  }
+  .submit-btn {
+    width: 38%;
+  }
+  .form-control {
+    flex-direction: column;
+  }
+  .submit-btn {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .section-center {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  body {
+    padding-top: 65px;
+    padding-bottom: 55px;
+  }
+}
